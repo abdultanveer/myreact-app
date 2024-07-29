@@ -12,9 +12,11 @@ constructor(props) {
     incrementCount(){
         //this.state.count = this.state.count + 1
         this.setState({   //set state updates the state async
-            count: this.state.count +1
-        })
-        console.log("the state is "+this.state.count)   //sync
+            count: this.state.count +1  //2.
+        }, ()=>{
+            console.log("the state is "+this.state.count)   //sync1.
+        } )
+       // console.log("the state is "+this.state.count)   //sync1.
     }
 
 
