@@ -1,33 +1,40 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export class Counter extends Component {
-constructor(props) {
-  super(props)
+  constructor(props) {
+    super(props);
 
-  this.state = {
-     count: 0
+    this.state = {
+      count: 0,
+    };
   }
-}
 
-    incrementCount(){
-        //this.state.count = this.state.count + 1
-        this.setState({   //set state updates the state async
-            count: this.state.count +1  //2.
-        }, ()=>{
-            console.log("the state is "+this.state.count)   //sync1.
-        } )
-       // console.log("the state is "+this.state.count)   //sync1.
-    }
+  incrementCount() {
+    // this.setState(prevState => ({
+    //     count:prevState.count +1
+    // }))
+    this.setState({
+        count:this.state.count+1
+    },()=>{ console.log(this.state.count)})
+   }
 
+  incrementFive(){
+    this.incrementCount()
+    this.incrementCount()
+    this.incrementCount()
+    this.incrementCount()
+    this.incrementCount()
+
+  }
 
   render() {
     return (
       <div>
-        <div>Current count is  {this.state.count}</div>
-        <button  onClick={() => this.incrementCount()}>increment</button>
+        <div>Current count is {this.state.count}</div>
+        <button onClick={() => this.incrementFive()}>increment</button>
       </div>
-    )
+    );
   }
 }
 
-export default Counter
+export default Counter;
