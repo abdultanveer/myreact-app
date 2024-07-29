@@ -1,4 +1,5 @@
 import "./App.css";
+import ClassClick from "./components/ClassClick";
 import Counter from "./components/Counter";
 import FunctionClick from "./components/FunctionClick";
 import Greet from "./components/Greet";
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
     <FunctionClick/>
+    <ClassClick/>
      <Counter/>
       <Greet name="ansari" alias="ascendion"></Greet>
       <Message name ="abdul" alias="tanveer" />
