@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Greet(props) {
- // console.log(props);
+export default function Greet({name,alias}) {
+  console.log(name+alias);
   return(
    
-    <h1>Welcome to react {props.name} a.k.a {props.alias} </h1>
+    <h1>Welcome to react {name} a.k.a {alias} </h1>
   )
    
   
