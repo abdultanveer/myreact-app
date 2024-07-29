@@ -4,8 +4,8 @@ export default class Message extends Component {
   constructor() {
     super()
     this.state = {
-      msg: "Welcome mr visitor",
-    };
+        msg: "Welcome mr visitor",
+      };
   }
 
   changeMessage() {
