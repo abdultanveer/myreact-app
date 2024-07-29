@@ -26,7 +26,7 @@ export class Counter extends Component {
     this.incrementCount()
 
   }
-
+//painting the screen
   render() {
     return (
       <div>
