@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
      <Counter/>
-      <Greet name="abdul" alias="tanveer"></Greet>
+      <Greet name="ansari" alias="ascendion"></Greet>
       <Message />
     </div>
   );
