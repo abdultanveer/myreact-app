@@ -1,13 +1,11 @@
 import "./App.css";
-import PeopleList from "./components/lists/PeopleList";
+import StyleSheet from "./styles/StyleSheet";
 
-import PackingList from "./components/PackingList";
 
 function App() {
   return (
     <div className="App">
-      <PeopleList />
-      <PackingList />
+     <StyleSheet  primary = {true}/>
     </div>
   );
 }
