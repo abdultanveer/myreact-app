@@ -10,19 +10,28 @@ export class Users extends Component {
       super(props)
     
       this.state = {
-         users: []
+         posts: []
       }
     }
 
     componentDidMount(){
-        axios.get('https://jsonplaceholder.typicode.com/users')
-        .then( response => {console.log(response.data)})
+        axios.get('https://jsonplaceholder.typicode.com/posts')
+        .then( response => {
+            this.setState({ posts: response.data})
+            console.log(response.data)
+        })
         .catch(error => {console.log(error)})
     }
 
   render() {
+    const {posts} = this.state
     return (
-      <div>Users</div>
+      <div>List of posts
+      {
+        posts.length ?
+        posts.map(post => <div key={post.id}> {post.title}</div>): null
+      }
+      </div>
     )
   }
 }
