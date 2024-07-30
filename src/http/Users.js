@@ -10,27 +10,35 @@ export class Users extends Component {
       super(props)
     
       this.state = {
+        errorMessage: '',
          posts: []
       }
     }
 
     componentDidMount(){
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('https://jsonplaceholder.typicode.com/posts1')
         .then( response => {
             this.setState({ posts: response.data})
             console.log(response.data)
         })
-        .catch(error => {console.log(error)})
+        .catch(error => {
+            console.log(error)
+            this.setState({
+                errorMessage: 'error fetching the data'
+            })
+        
+        })
     }
 
   render() {
-    const {posts} = this.state
+    const {posts,errorMessage} = this.state
     return (
       <div>List of posts
       {
         posts.length ?
         posts.map(post => <div key={post.id}> {post.title}</div>): null
       }
+      {errorMessage ? <div>{errorMessage}</div>: null}
       </div>
     )
   }
