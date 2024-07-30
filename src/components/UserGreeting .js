@@ -13,9 +13,8 @@ export class UserGreeting  extends Component {
 
   render() {
    
-         (this.state.isLoggedIn)?
-          <div>welcome abdul</div>:
-           <div>welcome guest</div>
+       return  (this.state.isLoggedIn) &&  //shortcircuit operator
+          <div>welcome abdul</div>
         }
     
   }

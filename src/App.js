@@ -10,11 +10,6 @@ function App() {
   return (
     <div className="App">
     <UserGreeting/>
-    <FunctionClick/>
-    <ClassClick/>
-     <Counter/>
-      <Greet name="ansari" alias="ascendion"></Greet>
-      <Message name ="abdul" alias="tanveer" />
     </div>
   );
 }
