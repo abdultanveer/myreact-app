@@ -13,14 +13,12 @@ export class UserGreeting  extends Component {
 
   render() {
    
-        if (this.state.isLoggedIn) {
-            return <div>welcome abdul</div>
-        }
-        else {
-            return <div>welcome guest</div>
+         (this.state.isLoggedIn)?
+          <div>welcome abdul</div>:
+           <div>welcome guest</div>
         }
     
   }
-}
+
 
 export default UserGreeting 
