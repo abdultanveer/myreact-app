@@ -14,9 +14,9 @@ function HookArray() {
     <div>
         <button onClick={addItem}>Additem</button>
         <ul>
-            {items.map(item =>{
+            {items.map(item =>(
                 <li key={item.id}>{item.value}</li>
-            })}
+            ))}
         </ul>
     </div>
   )
