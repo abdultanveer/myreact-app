@@ -1,12 +1,12 @@
 import "./App.css";
-import UseStateObject from "./hooks/UseStateObject";
-import UseStatePrevCount from "./hooks/UseStatePrevCount";
+import HookArray from "./hooks/usestate/HookArray";
+import UseStateObject from "./hooks/usestate/UseStateObject";
 
 //install axios
 function App() {
   return (
     <div>
-    <UseStateObject/>
+    <HookArray/>
     </div>
   );
 }
