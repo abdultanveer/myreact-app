@@ -1,12 +1,13 @@
 import "./App.css";
-import HookArray from "./hooks/usestate/HookArray";
-import UseStateObject from "./hooks/usestate/UseStateObject";
+import ClassCounterOne from "./hooks/useEffect/ClassCounterOne ";
+import CounterOne from "./hooks/useEffect/CounterOne";
+
 
 //install axios
 function App() {
   return (
     <div>
-    <HookArray/>
+    <CounterOne/>
     </div>
   );
 }
