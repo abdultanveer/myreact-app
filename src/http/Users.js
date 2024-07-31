@@ -16,7 +16,8 @@ export class Users extends Component {
     }
 
     componentDidMount(){
-        axios.get('https://jsonplaceholder.typicode.com/posts1')
+      
+        axios.get('https://jsonplaceholder.typicode.com/posts')
         .then( response => {
             this.setState({ posts: response.data})
             console.log(response.data)
