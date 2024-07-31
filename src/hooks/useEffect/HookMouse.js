@@ -11,8 +11,15 @@ export default function HookMouse() {
     }
 
     useEffect(() => {
-        console.log('use effect called')
+        //this gets called when the comopnent mounts
+        console.log('use effect called--component mounted')
         window.addEventListener('mousemove',logMousePosition)
+        //this is called when the compnent unmount
+        return () => {
+            console.log('component unmounting')
+            window.removeEventListener('mousemove',logMousePosition)
+          }
+
     },[] //this empty array will add the listener only once
     )
 
