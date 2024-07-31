@@ -3,6 +3,7 @@ import Form from "./formcomponents/Form";
 import LifeCycleA from "./formcomponents/LifeCycleA";
 import ClassCounter from "./hooks/ClassCounter";
 import HookCounter from "./hooks/HookCounter";
+import HookCountertwo from "./hooks/HookCountertwo";
 import PostForm from "./http/PostForm";
 import Users from "./http/Users";
 
@@ -10,7 +11,7 @@ import Users from "./http/Users";
 function App() {
   return (
     <div>
-      <HookCounter />
+      <HookCountertwo/>
     </div>
   );
 }
