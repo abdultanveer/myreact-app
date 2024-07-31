@@ -10,7 +10,7 @@ function CounterOne() {
     //this call back will be executed after each rendering is done
         console.log('useEffect is updating the document title')
         document.title = `you clicked ${count} times`
-    } ,[count]
+    } ,[]
 )
 
 //i want useeffect to be called only when the count is increment not when the name is updated
