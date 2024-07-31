@@ -7,6 +7,7 @@ import CounterOne from "./hooks/useEffect/CounterOne";
 function App() {
   return (
     <div>
+    {/* <ClassCounterOne/> */}
     <CounterOne/>
     </div>
   );
