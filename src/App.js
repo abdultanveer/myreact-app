@@ -1,6 +1,7 @@
 import { createContext } from "react";
 import "./App.css";
 import ComponentC from "./hooks/useContext/ComponentC";
+import CounterOne from "./hooks/useReducer/CounterOne";
 
 
 export const ThemeContext = createContext(null);
@@ -9,9 +10,7 @@ export const ThemeContext = createContext(null);
 function App() {
   return (
     <div>
-      <ThemeContext.Provider value="dark">
-        <ComponentC />
-      </ThemeContext.Provider>
+      <CounterOne/>
     </div>
   );
 }
