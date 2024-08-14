@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { ThemeContext } from "../../App";
 
 export default function ComponentF() {
-  return (
-    <div>ComponentF</div>
-  )
+  const theme = useContext(ThemeContext);
+
+  return <div>ComponentF {theme}</div>;
 }
