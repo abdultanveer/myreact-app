@@ -20,7 +20,7 @@ export default function CounterTwo() {
 
   return (
     <div>
-    <div><h2>{count}</h2> </div>
+    <div><h2>{count.firstCounter}</h2> </div>
     <button onClick={()=>{dispatch({type:'increment'})}} >Increment</button>
     <button onClick={()=>{dispatch({type:'decrement'})}}>decrement</button>
     <button onClick={()=>{dispatch({type:'reset'})}}>Reset</button>
