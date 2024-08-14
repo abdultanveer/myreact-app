@@ -2,7 +2,7 @@ import { createContext, useReducer } from "react";
 import "./App.css";
 import ComponentA from "./hooks/contextReducer/ComponentA";
 import ComponentB from "./hooks/contextReducer/ComponentB";
-
+import ComponentC from "./hooks/useContext/ComponentC"
 
 export const CountContext = createContext();
 const initialState = 0
