@@ -1,15 +1,14 @@
 import { createContext } from "react";
 import "./App.css";
-import CounterTwo from "./hooks/useReducer/CounterTwo";
+import CounterThree from "./hooks/useReducer/CounterThree";
 
 
 export const ThemeContext = createContext(null);
 
-//install axios
 function App() {
   return (
     <div>
-      <CounterTwo/>
+      <CounterThree/>
     </div>
   );
 }
